@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/sergioroblesgarcia/Desktop/kinal_2026/dotnet/backend/prod/FUNDAMENTOS-DOTNET/OrderWorkerManagement/OrderWorkerManagement.csproj": {}
+    "C:\\Users\\sarg_\\OneDrive\\Documentos\\kinal_2026\\net\\backend\\prod\\FUNDAMENTOS-DOTNET\\OrderWorkerManagement\\OrderWorkerManagement.csproj": {}
   },
   "projects": {
-    "/Users/sergioroblesgarcia/Desktop/kinal_2026/dotnet/backend/prod/FUNDAMENTOS-DOTNET/OrderWorkerManagement/OrderWorkerManagement.csproj": {
+    "C:\\Users\\sarg_\\OneDrive\\Documentos\\kinal_2026\\net\\backend\\prod\\FUNDAMENTOS-DOTNET\\OrderWorkerManagement\\OrderWorkerManagement.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/sergioroblesgarcia/Desktop/kinal_2026/dotnet/backend/prod/FUNDAMENTOS-DOTNET/OrderWorkerManagement/OrderWorkerManagement.csproj",
+        "projectUniqueName": "C:\\Users\\sarg_\\OneDrive\\Documentos\\kinal_2026\\net\\backend\\prod\\FUNDAMENTOS-DOTNET\\OrderWorkerManagement\\OrderWorkerManagement.csproj",
         "projectName": "OrderWorkerManagement",
-        "projectPath": "/Users/sergioroblesgarcia/Desktop/kinal_2026/dotnet/backend/prod/FUNDAMENTOS-DOTNET/OrderWorkerManagement/OrderWorkerManagement.csproj",
-        "packagesPath": "/Users/sergioroblesgarcia/.nuget/packages/",
-        "outputPath": "/Users/sergioroblesgarcia/Desktop/kinal_2026/dotnet/backend/prod/FUNDAMENTOS-DOTNET/OrderWorkerManagement/obj/",
+        "projectPath": "C:\\Users\\sarg_\\OneDrive\\Documentos\\kinal_2026\\net\\backend\\prod\\FUNDAMENTOS-DOTNET\\OrderWorkerManagement\\OrderWorkerManagement.csproj",
+        "packagesPath": "C:\\Users\\sarg_\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sarg_\\OneDrive\\Documentos\\kinal_2026\\net\\backend\\prod\\FUNDAMENTOS-DOTNET\\OrderWorkerManagement\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/sergioroblesgarcia/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\sarg_\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
@@ -38,7 +38,7 @@
           "auditLevel": "low",
           "auditMode": "all"
         },
-        "SdkAnalysisLevel": "10.0.100"
+        "SdkAnalysisLevel": "10.0.200"
       },
       "frameworks": {
         "net10.0": {
@@ -65,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.103/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.203/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",

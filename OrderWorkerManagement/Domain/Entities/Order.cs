@@ -4,6 +4,7 @@ using System.Dynamic;
 using System.Linq;
 using System.Security;
 using System.Threading.Tasks;
+using OrderWorkerManagement.Domain.Enums;
 
 namespace OrderWorkerManagement.Domain.Entities
 {
@@ -12,10 +13,10 @@ namespace OrderWorkerManagement.Domain.Entities
 
         #region "Propiedades"
         private readonly string _OrderId = Guid.NewGuid().ToString();
-        private string _entityType;
-        public string OperationType {get; set;}
-        public string Status {get; set;}
-        public Aspirante _Data {get; set;}
+        private EntityType _EntityType;
+        private OperationType _OperationType;
+        public OrderStatus Status {get; set;}
+        public Aspirante Aspirante {get; set;}
 
         #endregion
 
@@ -29,26 +30,38 @@ namespace OrderWorkerManagement.Domain.Entities
          
         }
 
-        public string EntityType{
+        public EntityType EntityType{
 
             get{
-                return _entityType;
+                return _EntityType;
             }
             set{
-              _entityType = value.ToUpper();  
+              _EntityType = value;  
+            }
+        }
+
+        public OperationType OperationType
+        {
+            get
+            {
+                return _OperationType;
+            }
+            set
+            {
+                _OperationType = value;
             }
         }
 
         #endregion
 
-        public void Processed()
+        public void MarkAsProcessed ()
         {
-            this.Status = "Processed";
+            this.Status = OrderStatus.PROCESSED;
         }
 
-        public void Failed()
+        public void MarkAsFailed()
         {
-            this.Status = "Failed";
+            this.Status = OrderStatus.FAILED;
         }
 
     }
