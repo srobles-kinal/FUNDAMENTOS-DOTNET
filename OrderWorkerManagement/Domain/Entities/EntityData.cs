@@ -14,6 +14,18 @@ namespace OrderWorkerManagement.Domain.Entities
        public string Phone {get; set;}
        public string Email {get;set;}
 
-       public abstract string showId();
+       public EntityData (string lastName, string firstName, string address, string email)
+        {
+            this.LastName = lastName;
+            this.FirstName = firstName;
+            this.Address = address;
+            this.Email = email;
+        }
+
+        protected EntityData()
+        {
+        }
+
+        public abstract string showId();
     }
 }
