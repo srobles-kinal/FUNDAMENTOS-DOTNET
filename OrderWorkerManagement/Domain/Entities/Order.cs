@@ -16,7 +16,7 @@ namespace OrderWorkerManagement.Domain.Entities
         private EntityType _EntityType;
         private OperationType _OperationType;
         public OrderStatus Status {get; set;}
-        public Aspirante Aspirante {get; set;}
+        public Applicant Aspirante {get; set;}
 
         #endregion
 

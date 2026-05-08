@@ -19,11 +19,13 @@ public class Worker(ILogger<Worker> logger) : BackgroundService
                 order.OperationType = OperationType.CREATE;
                 order.Status = OrderStatus.PROCESSED;
 
-                order.Aspirante = new Aspirante();
-                order.Aspirante.Apellidos="Robles";
-                order.Aspirante.Direccion = "zona 8";
+                Applicant applicant = new Applicant();
+
+                applicant.Email = "mail@mail.com";
+                
                
                 logger.LogInformation("Worker running Order: {0}",JsonSerializer.Serialize(order));
+                logger.LogInformation("Worker running Order: {0}",JsonSerializer.Serialize(applicant));
             }
             await Task.Delay(1000, stoppingToken);
         }

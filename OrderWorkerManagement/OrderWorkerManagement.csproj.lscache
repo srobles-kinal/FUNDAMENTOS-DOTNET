@@ -55,8 +55,10 @@ TemporaryDependencyNodeTargetIdentifier=net10.0
 
 [sourceFiles]
 Domain/Entities/
- Aspirante.cs
+ Applicant.cs
+ EntityData.cs
  Order.cs
+ Student.cs
 Domain/Enums/
  EntityType.cs
  OperationType.cs

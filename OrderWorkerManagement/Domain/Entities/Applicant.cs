@@ -6,14 +6,16 @@ using System.Threading.Tasks;
 
 namespace OrderWorkerManagement.Domain.Entities
 {
-    public class Aspirante
+    public class Applicant : EntityData
     {
-        public string Apellidos {get; set;}       
-        public string Direccion {get; set;}   
-        public string Telefono {get; set;}   
-        public string Email {get; set;}           
+        public string ShiftId {get;set;}      
         public string ExamenId {get; set;}   
         public string CarreraId {get; set;}   
-        public string JornadaId {get; set;}   
+        public string JornadaId {get; set;}
+
+        public override string showId()
+        {
+             return $"El número de expediente es {ShiftId}";
+        }
     }
 }
